@@ -6,7 +6,7 @@ class Mage_Shell_Permissions extends Mage_Shell_Abstract
 	
 	protected function _getCommands(){
 		$_commands = array(
-			'cd ..',
+			'cd '.dirname(Mage::getRoot()),
 			'sudo find . -type f \-exec chmod 644 {} \;',
 			'sudo find . -type d \-exec chmod 755 {} \;',
 			'sudo find ./var -type d \-exec chmod 777 {} \;',
@@ -24,6 +24,7 @@ class Mage_Shell_Permissions extends Mage_Shell_Abstract
 	}
 
 	public function run(){
+		
 		if($this->getArg('reset')){
 			$output = shell_exec($this->_getCommands());
 			echo $output;
