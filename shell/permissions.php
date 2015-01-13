@@ -1,4 +1,5 @@
 <?php
+#test
 require_once 'abstract.php';
 
 class Mage_Shell_Permissions extends Mage_Shell_Abstract
