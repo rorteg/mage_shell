@@ -30,6 +30,7 @@ class Mage_Shell_Permissions extends Mage_Shell_Abstract
 			$output = shell_exec($this->_getCommands());
 			echo $output;
 			echo 'Reset all permissions of the Magento Folders.';
+			echo "\n";
 		}else{
 			echo $this->usageHelp();
 		}
