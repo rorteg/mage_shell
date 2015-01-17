@@ -7,4 +7,4 @@ A ideia é criar ferramentas shell para agilizar nossas rotinas.
 * Permissões de pastas;
 
 #### Modo de usar ####
-Para resetar as pastas basta usar o comando php -f shell/uepermissions.php resetAll
+Para resetar as pastas basta usar o comando php -f shell/permissions.php resetAll

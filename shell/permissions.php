@@ -1,9 +1,34 @@
 <?php
+**
+ * Author: Rafael Ortega Bueno
+ * Date: Jan 17, 2015
+ * Time: 14:53:29 PM
+ *
+ * Mage_Shell script that interfaces with the Magento permissions. 
+ *
+ *
+ * @category    Uecommerce
+ * @package     Mage_Shell
+ * @copyright   Copyright (c) 2014 Uecommerce, Inc. (http://www.uecommerce.com.br)
+ * @license     http://www.opensource.org/licenses/osl-3.0.php
+ */
 require_once 'uecommerce/uecommands.php';
+
+/**
+ * Magento Permissions Shell Script
+ *
+ * @category    Uecommerce
+ * @package     Mage_Shell
+ * @author      Rafael Ortega Bueno
+ */
 
 class Uecommerce_Shell_Uepermissions extends Uecommerce_Shell_Uecommands
 {
 
+	/**
+     * Run script
+     *
+     */
 	public function run(){
 		if($this->getArg('resetAll')){
 			$this->resetAll();
@@ -12,6 +37,11 @@ class Uecommerce_Shell_Uepermissions extends Uecommerce_Shell_Uecommands
 		}
 	}
 
+
+	/**
+     * Reset permissions for all Magento folders
+     * @return void
+     */
 	public function resetAll(){
 		$this->_commands = array();
 		$this->_createCommand('Starting...', 'cd '.dirname(Mage::getRoot()), '');
@@ -30,6 +60,10 @@ class Uecommerce_Shell_Uepermissions extends Uecommerce_Shell_Uecommands
 	}
 
 
+	/**
+     * Retrieve Usage Help Message
+     *
+     */
 
 	public function usageHelp()
     {
