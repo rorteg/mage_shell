@@ -1,4 +1,4 @@
-# Uecommerce_Shell #
+# Mage_Shell #
 
 A ideia é criar ferramentas shell para agilizar nossas rotinas.
 
