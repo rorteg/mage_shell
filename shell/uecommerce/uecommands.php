@@ -2,7 +2,7 @@
 
 require_once __DIR__.'/../abstract.php';
 
-class Mage_Shell_Uecommerce_Uecommands extends Mage_Shell_Abstract
+class Uecommerce_Shell_Uecommands extends Mage_Shell_Abstract
 {
 	protected $_commands = array();
 	protected $_successMessage;

@@ -1,7 +1,7 @@
 <?php
 require_once 'uecommerce/uecommands.php';
 
-class Mage_Shell_Uepermissions extends Mage_Shell_Uecommerce_Uecommands
+class Uecommerce_Shell_Uepermissions extends Uecommerce_Shell_Uecommands
 {
 
 	public function run(){
@@ -46,5 +46,5 @@ USAGE;
     }
 }
 
-$shell = new Mage_Shell_Uepermissions();
+$shell = new Uecommerce_Shell_Uepermissions();
 $shell->run();
