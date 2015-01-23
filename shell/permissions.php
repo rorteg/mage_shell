@@ -30,6 +30,10 @@ class Uecommerce_Shell_Uepermissions extends Uecommerce_Shell_Uecommands
      *
      */
 	public function run(){
+		if(!function_exists('shell_exec')){
+			echo $this->errorMessage('Could not perform the operation: shell_exec is disabled for php.');
+			return false;
+		}
 		if($this->getArg('resetAll')){
 			$this->resetAll();
 		}else{
